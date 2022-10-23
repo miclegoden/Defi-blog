@@ -1,0 +1,42 @@
+.content {
+  padding-left: 8% !important;
+}
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-roo {
+  /* background-color: #fff !important;
+  color: #000 !important; */
+}
+.rightbarContent {
+  padding: 25px;
+  width: 80%;
+}
+
+.trends {
+  border-radius: 25px;
+  min-height: calc(100vh - 200px);
+  /* max-width: 290px; */
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.trend {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.trendText {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.category {
+  font-size: 20px !important;
+}

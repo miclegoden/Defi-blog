@@ -1,0 +1,97 @@
+.singleBlog {
+  flex: 9;
+  margin-top: 10px;
+}
+.singleBlogWrapper {
+  padding: 20px;
+  padding-right: 0;
+  display: flex;
+}
+
+.singleBlogImg {
+  padding: auto;
+  margin-right: 10px;
+}
+
+.singleBlogTitle {
+  text-align: center;
+  margin: 10px;
+  font-size: 28px;
+  font-family: 'Lora', sans-serif;
+}
+
+.singleBlogText {
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singleBlogText::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card-block {
+  width: 100% !important;
+}
+.comment-text {
+  width: 95%;
+  height: 80px;
+  padding: 2%;
+  border-radius: 10px;
+  font-family: Cursive;
+  font-size: 16px;
+}
+
+.comment-footer {
+  width: 100%;
+  display: flex;
+}
+
+.post-button {
+  margin-left: 75% !important;
+}
+
+.profile-container {
+  border-right: 2px solid #ccc !important;
+}
+
+.username {
+  margin-left: 30%;
+}
+
+.link-explorer {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-follow {
+  width: 90% !important;
+  color: white !important;
+  background-color: black !important;
+}
+.show-avatar {
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.show-bio {
+  width: 90%;
+}
+
+.showing {
+  margin-left: 80% !important;
+}
+
+/* .favorite {
+  width: 20px !important;
+}
+
+.chat {
+  width: 20px !important;
+} */

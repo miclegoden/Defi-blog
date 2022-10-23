@@ -1,0 +1,172 @@
+.sidebar {
+  width: 5% !important;
+}
+
+.logo {
+  height: 60px !important;
+}
+
+.nav {
+  margin-top: 200% !important;
+}
+
+.writeForm {
+  position: relative;
+  margin-top: 30px;
+}
+
+.writeFormGroup {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.writeIcon {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 50%;
+  color: rgb(129, 125, 125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.writeInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+}
+
+.writeInput::placeholder {
+  color: rgb(189, 185, 185);
+  font-weight: 400;
+}
+
+.writeInput:focus {
+  outline-style: none;
+}
+
+.writeText {
+  width: 70vw;
+  height: 100vh;
+  font-family: inherit;
+  font-size: 20px;
+}
+
+.writeSubmit {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.textarea {
+  height: 500px !important;
+}
+
+.singleBlogTitle {
+  /* text-align: center; */
+  margin: 10px;
+  font-size: 28px;
+  font-family: 'Lora', sans-serif;
+}
+
+.singleBlogText {
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singleBlogText::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* .showing {
+  margin: 10% !important;
+} */
+.favorite {
+  margin-right: 20% !important;
+}
+.comment-text {
+  margin-top: 5% !important;
+  width: 97% !important;
+  height: 80px;
+  padding: 2% !important;
+  border-radius: 10px;
+  font-family: Cursive;
+  font-size: 16px;
+}
+
+/* .post-button {
+  width: 200% !important;
+} */
+
+.btn-follow {
+  width: 70% !important;
+  color: white !important;
+  background-color: black !important;
+}
+
+.title-social {
+  text-align: left !important;
+  font-size: 20px !important;
+  font-weight: 1000 !important;
+  padding: 2% 0 0 15% !important;
+}
+
+.button-group {
+}
+
+.place-button {
+  margin-right: 30% !important;
+}
+
+.collapse {
+  margin-top: 1% !important;
+}
+
+.warning {
+  margin: 0 !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.show-alert {
+  padding-right: 2% !important;
+}
+
+.gutter-row {
+  margin: 20px;
+}
+
+.title-bio {
+  text-align: left !important;
+  font-size: 20px !important;
+  font-weight: 1000 !important;
+  padding: 5% 0 0 7% !important;
+}
+
+.title-add {
+  text-align: left !important;
+  font-size: 20px !important;
+  font-weight: 1000 !important;
+  padding: 5% 0 0 0% !important;
+}
+
+.showBlogTitle {
+  text-align: left !important;
+}
