@@ -85,7 +85,6 @@ function Home(props) {
               <CardHeader>
                 <Row>
                   <Col className="text-left" sm="6">
-                    <h5 className="card-category"></h5>
                     <CardTitle tag="h2">Recommended Blogs</CardTitle>
                   </Col>
                 </Row>
@@ -111,7 +110,6 @@ function Home(props) {
                       />
                     )
                   })}
-           
               </CardBody>
             </Card>
           </Col>

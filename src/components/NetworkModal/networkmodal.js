@@ -1,4 +1,4 @@
-import { useState, useEffect, React } from 'react'
+import { React } from 'react'
 
 // import Modal from '@mui/material/Modal'
 // import Box from '@mui/material/Box'
@@ -6,7 +6,7 @@ import { useState, useEffect, React } from 'react'
 import NetworkButton from './networkbutton'
 import { Network } from '../../Network/network'
 
-import { Button, Modal, Row, Col } from 'antd'
+import { Modal, Row, Col } from 'antd'
 import '../../assets/css/Style.css'
 
 // import {
@@ -39,6 +39,7 @@ const style = {
 }
 
 const NetworkModal = (props) => {
+  // const key = 0
   return (
     <div>
       <div>
@@ -69,7 +70,7 @@ const NetworkModal = (props) => {
             {Object.keys(Network).map((key, index) => (
               <Col className="gutter-row" span={3}>
                 <div style={style}>
-                  <NetworkButton key={index} data={Network?.[key]} />
+                  <NetworkButton key={index.toString()} data={Network?.[key]} />
                 </div>
               </Col>
             ))}

@@ -13,7 +13,7 @@
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
+94r2RInFh16oBI9vgT
 */
 import Home from 'views/Home.js'
 import MyBlog from 'views/MyBlog.js'
@@ -33,28 +33,45 @@ import { HomeOutlined, BookOutlined, DiffOutlined } from '@ant-design/icons'
 var routes = [
   {
     path: '/home',
-    name: 'Recommend Blogs',
-    icon: <HomeOutlined style={{ fontSize: '20px' }} />,
+    name: 'DEFIBLOGS',
+    title: 'Home',
+    // icon: <HomeOutlined style={{ fontSize: '20px' }} />,
+    icon: <i className="tim-icons icon-bank" style={{ fontSize: '20px' }} />,
     component: Home,
     layout: '/admin',
   },
   {
     path: '/myblog',
-    name: 'Your Blogs',
-    icon: <BookOutlined style={{ fontSize: '20px' }} />,
+    name: 'DEFIBLOGS',
+    title: 'My blogs',
+    // icon: <BookOutlined style={{ fontSize: '20px' }} />,
+    icon: (
+      <i
+        className="tim-icons icon-book-bookmark"
+        style={{ fontSize: '20px' }}
+      />
+    ),
     component: MyBlog,
     layout: '/admin',
   },
   {
     path: '/newstory',
-    name: 'New Blog',
-    icon: <DiffOutlined style={{ fontSize: '20px' }} />,
+    name: 'DEFIBLOGS',
+    title: 'New Story',
+    // icon: <DiffOutlined style={{ fontSize: '20px' }} />,
+    icon: (
+      <i
+        className="tim-icons icon-single-copy-04"
+        style={{ fontSize: '20px' }}
+      />
+    ),
     component: NewStory,
     layout: '/admin',
   },
   {
     path: '/user-profile',
-    name: 'Profile',
+    name: 'DEFIBLOGS',
+    title: 'Profile',
     icon: (
       <i className="tim-icons icon-single-02" style={{ fontSize: '20px' }} />
     ),
@@ -63,13 +80,13 @@ var routes = [
   },
   {
     path: '/blog/:url',
-    name: '',
+    name: 'DEFIBLOGS',
     component: Blog,
     layout: '/admin',
   },
   {
     path: '/publicProfile',
-    name: '',
+    name: 'DEFIBLOGS',
     component: PublicProfile,
     layout: '/admin',
   },

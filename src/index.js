@@ -28,7 +28,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 
 import ThemeContextWrapper from './components/ThemeWrapper/ThemeWrapper'
 import BackgroundColorWrapper from './components/BackgroundColorWrapper/BackgroundColorWrapper'
-import 'antd/dist/antd.css'
+import 'antd/dist/antd.min.css'
+import './polyfill'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
