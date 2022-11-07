@@ -1,13 +1,23 @@
-.sidebar {
+/* .sidebar {
   width: 5% !important;
-}
+} */
 
 .logo {
   height: 60px !important;
 }
 
 .nav {
-  margin-top: 200% !important;
+  margin-top: 60% !important;
+}
+
+.nav-link {
+  display: flex !important;
+}
+
+.btn-title {
+  margin-left: 5% !important;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .writeForm {
@@ -132,7 +142,7 @@
 }
 
 .place-button {
-  margin-right: 30% !important;
+  margin-right: 27% !important;
 }
 
 .collapse {
@@ -169,4 +179,19 @@
 
 .showBlogTitle {
   text-align: left !important;
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar {
+    width: 260px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 260px !important;
+  }
+  .main-panel .content {
+    padding-left: 15px !important;
+    padding-right: 15px;
+  }
 }

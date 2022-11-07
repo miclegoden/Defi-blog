@@ -24,13 +24,13 @@ import axios from 'axios'
 import BlogCard from '../components/BlogCard'
 // import Button from '@mui/material/Button'
 import { useWeb3React } from '@web3-react/core'
-import { Link, Route, Switch } from 'react-router-dom'
-import { Avatar, Badge } from 'antd'
+import { Link } from 'react-router-dom'
+// import { Avatar, Badge } from 'antd'
 
-import { UserOutlined, MessageTwoTone, HeartTwoTone } from '@ant-design/icons'
+// import { MessageTwoTone, HeartTwoTone } from '@ant-design/icons'
 
 import Rightbar from 'components/Rightbar/Rightbar'
-import NewStory from './NewStory'
+// import NewStory from './NewStory'
 import '../assets/css/Style.css'
 
 function ShowBlog() {

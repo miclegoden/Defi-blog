@@ -138,8 +138,10 @@ function Sidebar(props) {
                     >
                       {/* <IconButton>{prop.icon}</IconButton>
                       <i className={prop.icon} /> */}
+
                       {prop.icon}
                       {/* <p>{rtlActive ? prop.rtlName : prop.name}</p> */}
+                      <p className="btn-title">{prop.title}</p>
                     </NavLink>
                   </li>
                 )

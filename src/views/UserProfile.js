@@ -1,14 +1,5 @@
 /*!
 
-=========================================================
-* Black Dashboard React v1.2.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
 
 =========================================================
 
@@ -16,13 +7,10 @@
 
 */
 import React, { useState, useEffect } from 'react'
-// react plugin for creating notifications over the dashboard
-import NotificationAlert from 'react-notification-alert'
 
 // reactstrap components
 import {
   Alert,
-  UncontrolledAlert,
   Button,
   Card,
   CardHeader,
@@ -39,17 +27,17 @@ import {
 // import Avatar from '@mui/material/Avatar'
 import { logoM } from '../config/constants'
 import { NFTStorage } from 'nft.storage'
-import { Icon } from '../Icon/icon'
+
 import Web3 from 'web3'
 import '../assets/css/Style.css'
-
-import { UserOutlined, MessageTwoTone, HeartTwoTone } from '@ant-design/icons'
-import { Avatar, Badge } from 'antd'
+import SocialModal from '../components/SocialModal/SocialModal'
+import { UserOutlined } from '@ant-design/icons'
+import { Avatar } from 'antd'
 
 const web3 = new Web3(window.ethereum)
 
 function UserProfile() {
-  const notificationAlertRef = React.useRef(null)
+  // const notificationAlertRef = React.useRef(null)
   useEffect(() => {
     ChangeAccount()
     getFileUrl()
@@ -71,12 +59,12 @@ function UserProfile() {
     setsocialUrl(socialData)
   }
   const [showAccount, setShowAccount] = useState(true)
-  const [editModal, seteditModal] = useState(false)
+  // const [editModal, seteditModal] = useState(false)
   const [socialModal, setsocialModal] = useState(false)
   const [fileUrl, setfileUrl] = useState(true)
   const [socialUrl, setsocialUrl] = useState(true)
   const [bioText, setbioText] = useState('')
-  const [anchorEl, setAnchorEl] = useState(null)
+  // const [anchorEl, setAnchorEl] = useState(null)
 
   const PROFILE_API_KEY =
     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDIxRDA2NDc0QjQ5NEQxYjE2ZWIwZEMwRjllRWQxNmRFZjQ5ODhlQUMiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY2NDI4NTgzOTExNSwibmFtZSI6IlByb2ZpbGUifQ.wtL8kqJIjlLfyVZBCWOcTV0INmtcSltG_cybxD7GPv0'
@@ -200,7 +188,11 @@ function UserProfile() {
               </CardBody>
               <CardFooter>
                 <div className="button-container">
-                  <Button className="btn-icon btn-round" color="facebook">
+                  <Button
+                    className="btn-icon btn-round"
+                    color="facebook"
+                    onClick={() => setsocialModal(true)}
+                  >
                     <i className="fab fa-facebook" />
                   </Button>
                   <Button className="btn-icon btn-round" color="twitter">
@@ -326,6 +318,10 @@ function UserProfile() {
             </Card>
           </Col>
         </Row>
+        <SocialModal
+          show={socialModal}
+          close={() => setsocialModal(false)}
+        ></SocialModal>
       </div>
     </>
   )

@@ -113,11 +113,11 @@ function Admin(props) {
     <BackgroundColorContext.Consumer>
       {({ color, changeColor }) => (
         <React.Fragment>
-          <div className="wrapper">
+          <div className="">
             <Sidebar
               routes={routes}
               logo={{
-                outterLink: 'https://www.creative-tim.com/',
+                outterLink: '',
                 text: '',
                 imgSrc: logo,
               }}
